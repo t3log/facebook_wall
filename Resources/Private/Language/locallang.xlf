@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-05-16T22:36:38Z" product-name="facebook_wall">
+		<header/>
+		<body>
+			<trans-unit id="justNow">
+				<source>just now</source>
+			</trans-unit>
+			<trans-unit id="minutesAgo">
+			 	<source>%3$s mins ago</source>
+			</trans-unit>
+			<trans-unit id="hoursAgo">
+			 	<source>%2$s hours %3$s mins ago</source>
+			</trans-unit>
+			<trans-unit id="daysAgo">
+			 	<source>%1$s days %2$s hours %3$s mins ago</source>
+			</trans-unit>
+			<trans-unit id="follow_us">
+			 	<source>Follow Us</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

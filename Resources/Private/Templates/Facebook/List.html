@@ -1,0 +1,27 @@
+{namespace v=Tx_Vhs_ViewHelpers}
+<f:layout name="Default" />
+<f:section name="main">
+	<f:for each="{posts}" as="post" >
+		<v:switch value="{post.type}">
+			<v:case case="photo" break="TRUE">
+				<f:render partial="Facebook/Photo" arguments="{post: post, settings:settings}" />
+			</v:case>
+			<v:case case="video" break="TRUE">
+				<f:render partial="Facebook/Video" arguments="{post: post, settings:settings}" />
+			</v:case>
+			<v:case case="link" break="TRUE">
+				<f:render partial="Facebook/Link" arguments="{post: post, settings:settings}" />
+			</v:case>
+			<v:case case="status" break="TRUE">
+				<f:render partial="Facebook/Status" arguments="{post: post, settings:settings}" />
+			</v:case>
+			<v:case case="default">
+				<f:render partial="Facebook/Photo" arguments="{post: post, settings:settings}" />
+			</v:case>
+		</v:switch>
+	</f:for>
+	<f:link.external uri="{settings.facebookProfile}"  target="_blank" >
+		<f:translate key="follow_us" />
+	</f:link.external>
+</f:section>
+

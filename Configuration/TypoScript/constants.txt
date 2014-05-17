@@ -1,0 +1,18 @@
+plugin.tx_facebookwall {
+	view {
+		# cat=plugin.tx_facebookwall/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:facebook_wall/Resources/Private/Templates/
+		# cat=plugin.tx_facebookwall/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:facebook_wall/Resources/Private/Partials/
+		# cat=plugin.tx_facebookwall/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:facebook_wall/Resources/Private/Layouts/
+	}
+	settings {
+		limit = 3
+		profileId =
+		appId =
+		appSecret =
+		graphUrl = https://graph.facebook.com
+		facebookProfile = https://www.facebook.com/myPofile
+	}
+}

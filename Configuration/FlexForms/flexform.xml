@@ -1,0 +1,70 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+	<!--
+		################################
+		  SHEET General Settings
+		################################
+	-->
+	<sDEF>
+		<ROOT>
+			<TCEforms>
+				<sheetTitle>Configuration</sheetTitle>
+			</TCEforms>
+			<type>array</type>
+			<el>
+				<settings.profileId>
+					<TCEforms>
+						<label>LLL:EXT:facebook_wall/Resources/Private/Language/locallang_db.xlf:profile</label>
+						<config>
+							<type>input</type>
+							<size>35</size>
+						</config>
+					</TCEforms>
+				</settings.profileId>
+
+				<settings.appId>
+					<TCEforms>
+						<label>LLL:EXT:facebook_wall/Resources/Private/Language/locallang_db.xlf:appId</label>
+						<config>
+							<type>input</type>
+							<size>35</size>
+						</config>
+					</TCEforms>
+				</settings.appId>
+
+				<settings.appSecret>
+					<TCEforms>
+						<label>LLL:EXT:facebook_wall/Resources/Private/Language/locallang_db.xlf:appSecret</label>
+						<config>
+							<type>input</type>
+							<size>35</size>
+						</config>
+					</TCEforms>
+				</settings.appSecret>
+
+				<settings.facebookProfile>
+					<TCEforms>
+						<label>LLL:EXT:facebook_wall/Resources/Private/Language/locallang_db.xlf:facebookProfile</label>
+						<config>
+							<type>input</type>
+							<size>35</size>
+						</config>
+					</TCEforms>
+				</settings.facebookProfile>
+				<settings.limit>
+					<TCEforms>
+						<label>LLL:EXT:facebook_wall/Resources/Private/Language/locallang_db.xlf:limit</label>
+						<config>
+							<type>input</type>
+							<size>35</size>
+						</config>
+					</TCEforms>
+				</settings.limit>
+			</el>
+		</ROOT>
+	</sDEF>
+</sheets>
+</T3DataStructure>

@@ -1,0 +1,61 @@
+{namespace v=Tx_Vhs_ViewHelpers}3333
+<div class="status">
+	<span class="author">{post.from.name}</span>
+	<span class="date">
+		<v:var.set
+				name="facebookTimeAgo"
+				value="{v:format.dateRange(start: '', end: post.created_time, return: {0: '%d', 1: '%H', 2: '%I'})}"
+				/>
+		<f:if condition="{facebookTimeAgo.0} < 1">
+			<f:then>
+				<f:comment><!-- Post is 0 days old --></f:comment>
+				<f:if condition="{facebookTimeAgo.1} < 1">
+					<f:then>
+						<f:comment><!-- Post is 0 hours old --></f:comment>
+						<f:if condition="{facebookTimeAgo.2} < 1">
+							<f:then>
+								<f:comment><!-- Post is 0 minutes old --></f:comment>
+								<f:translate
+									key="LLL:EXT:facebook_wall/Resources/Private/Language/locallang.xlf:justNow"
+									arguments="{facebookTimeAgo}"
+								/>
+							</f:then>
+							<f:else>
+								<f:comment><!-- Post is at least 1 minute old --></f:comment>
+								<f:translate
+									key="LLL:EXT:facebook_wall/Resources/Private/Language/locallang.xlf:minutesAgo"
+								arguments="{facebookTimeAgo}"
+								/>
+							</f:else>
+						</f:if>
+					</f:then>
+					<f:else>
+						<f:comment><!-- Post is at least 1 hour old --></f:comment>
+						<f:translate
+							key="LLL:EXT:facebook_wall/Resources/Private/Language/locallang.xlf:hoursAgo"
+							arguments="{facebookTimeAgo}"
+						/>
+					</f:else>
+				</f:if>
+			</f:then>
+			<f:else>
+				<f:comment><!-- Post is at least 1 day old --></f:comment>
+				<f:translate
+					key="LLL:EXT:facebook_wall/Resources/Private/Language/locallang.xlf:daysAgo"
+					arguments="{facebookTimeAgo}"
+				/>
+			</f:else>
+		</f:if>
+	</span>
+	<f:if condition="{post.picture}">
+		<f:link.external uri="{post.link}"  target="_blank" >
+			<img alt="{post.from.name}" src="{post.picture}" />
+		</f:link.external>
+	</f:if>
+
+	<f:if condition="{post.message}">
+		<p>
+			<f:format.crop maxCharacters="100" append="...">{post.message}</f:format.crop>
+		</p>
+	</f:if>
+</div>

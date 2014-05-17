@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-05-16T22:36:38Z" product-name="facebook_wall">
+		<header/>
+		<body>
+			<trans-unit id="tx_facebookwall_domain_model_facebook">
+				<source>Facebook</source>
+			</trans-unit>
+			<trans-unit id="profile">
+				<source>Facebook Profile Name</source>
+			</trans-unit>
+			<trans-unit id="appId">
+				<source>App Id</source>
+			</trans-unit>
+			<trans-unit id="appSecret">
+				<source>App Secret</source>
+			</trans-unit>
+			<trans-unit id="facebookProfile">
+				<source>Facebook Profile - full url</source>
+			</trans-unit>
+			<trans-unit id="limit">
+				<source>Limit</source>
+			</trans-unit>
+			<trans-unit id="yes">
+				<source>Yes</source>
+			</trans-unit>
+			<trans-unit id="no">
+				<source>No</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

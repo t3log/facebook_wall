@@ -1,0 +1,17 @@
+plugin.tx_facebookwall {
+	view {
+		templateRootPath = {$plugin.tx_facebookwall.view.templateRootPath}
+		partialRootPath = {$plugin.tx_facebookwall.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_facebookwall.view.layoutRootPath}
+	}
+	settings {
+		limit = {$plugin.tx_facebookwall.settings.limit}
+		profileId = {$plugin.tx_facebookwall.settings.profileId}
+		appId = {$plugin.tx_facebookwall.settings.appId}
+		appSecret = {$plugin.tx_facebookwall.settings.appSecret}
+		graphUrl = {$plugin.tx_facebookwall.settings.graphUrl}
+		facebookProfile = {$plugin.tx_facebookwall.settings.facebookProfile}
+		}
+	}
+
+
