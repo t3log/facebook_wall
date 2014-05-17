@@ -7,7 +7,7 @@
 				<source>Facebook</source>
 			</trans-unit>
 			<trans-unit id="profile">
-				<source>Facebook Profile Name</source>
+				<source>Facebook Profile ID</source>
 			</trans-unit>
 			<trans-unit id="appId">
 				<source>App Id</source>
