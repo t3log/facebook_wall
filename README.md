@@ -6,5 +6,18 @@ To use this extension you first need to create new facebook application <https:/
 
 example configuration:
 -----------
+```
+plugin.tx_facebookwall {
+   settings {
+      limit = 3
+      profileId =
+      appId =
+      appSecret =
+      graphUrl = https://graph.facebook.com
+      facebookProfile = https://www.facebook.com/myPofile
+   }
+}
 
+
+```
 
